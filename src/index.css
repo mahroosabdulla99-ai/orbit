@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --font-display: "Chakra Petch", "Plus Jakarta Sans", sans-serif;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #040711;
+  }
+}
+
+/* Custom aerospace mission control range slider styling */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  background: #111a2e;
+  height: 6px;
+  border-radius: 9999px;
+  border: 1px solid #1e293b;
+}
+
+input[type="range"]::-moz-range-track {
+  background: #111a2e;
+  height: 6px;
+  border-radius: 9999px;
+  border: 1px solid #1e293b;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  margin-top: -5px;
+  background-color: #06b6d4;
+  height: 16px;
+  width: 16px;
+  border-radius: 9999px;
+  border: 2px solid #082f49;
+  box-shadow: 0 0 10px rgba(6, 182, 212, 0.5);
+  transition: transform 0.1s ease, background-color 0.1s ease;
+}
+
+input[type="range"]::-moz-range-thumb {
+  background-color: #06b6d4;
+  height: 16px;
+  width: 16px;
+  border-radius: 9999px;
+  border: 2px solid #082f49;
+  box-shadow: 0 0 10px rgba(6, 182, 212, 0.5);
+  transition: transform 0.1s ease, background-color 0.1s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+  background-color: #38bdf8;
+}
+
+/* Custom scrollbar for mathematical notes / debriefs */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #090e1d;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0284c7;
+}

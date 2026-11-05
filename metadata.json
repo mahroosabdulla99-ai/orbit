@@ -1,0 +1,6 @@
+{
+  "name": "Katherine Johnson: Trajectory & Orbital Mechanics Lab",
+  "description": "Interactive 16:9 educational mission-control slide exploring Katherine Johnson's actual mathematical contributions to NASA spaceflight, orbital mechanics, rendezvous, and safe re-entry trajectories.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
